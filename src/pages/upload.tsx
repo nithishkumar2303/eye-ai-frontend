@@ -4,7 +4,7 @@ import FileUpload from "@/components/FileUpload";
 import { Button } from "@/components/ui/button";
 
 // ✅ API URL from environment variable or fallback
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API_BASE_URL = import.meta.env.VITE_API_URL || "https://eye-ai-backend-dybr.onrender.com";
 
 const UploadPage = () => {
   const [selectedFiles, setSelectedFiles] = useState<FileList | null>(null);
