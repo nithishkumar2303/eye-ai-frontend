@@ -35,7 +35,7 @@ const Index = () => {
     formData.append("file", selectedFiles[0]);
 
     try {
-      const res = await fetch("http://localhost:8000/predict", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/predict`, {
         method: "POST",
         body: formData,
       });
